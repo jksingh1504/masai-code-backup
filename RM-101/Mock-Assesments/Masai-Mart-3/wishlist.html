@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Masai Mart</title>
+		<link rel="stylesheet" href="./stylesheets/Navbar.css" />
+		<link rel="stylesheet" href="./stylesheets/ProductContainer.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Icons"
+		/>
+		<style>
+			body {
+				font-family: sans-serif;
+				background-color: rgb(255, 255, 188);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Navbar">
+			<div onclick="gotoHome()">
+				<img
+					src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f6cd-fe0f.svg"
+					alt="error"
+				/>
+				<h2>Masai Mart</h2>
+			</div>
+
+			<div>
+				<div>
+					<h3 onclick="gotoHome()">Products</h3>
+				</div>
+				<div>
+					<h3 class="active">Wishlist</h3>
+				</div>
+			</div>
+		</div>
+		<br /><br /><br /><br /><br /><br />
+		<h1 style="width: 90%; margin: auto; color: #744eaa">Your Wishlist</h1>
+		<br /><br /><br />
+		<div id="productList"></div>
+	</body>
+</html>
+
+<script src="./controls/wishlist.js"></script>
+
+<script>
+	const gotoWishlist = () => {
+		window.location.href = "wishlist.html";
+	};
+
+	const gotoHome = () => {
+		window.location.href = "index.html";
+	};
+</script>

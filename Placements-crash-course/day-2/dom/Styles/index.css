@@ -1,0 +1,70 @@
+/* navbar CSS */
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+nav > div > h1,
+nav > div > h3 {
+  margin-left: 20px;
+}
+nav {
+  height: 60px;
+  width: 100%;
+  font-size: larger;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  font-size: 25px;
+}
+
+nav > div > div {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#imgContainer {
+  width: 100%; /* Make sure the div spans the entire width */
+  height: 400px; /* Adjust the height according to your design */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+#imgContainer img,
+img {
+  width: 100%; /* Make sure the image spans the entire width of its container */
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
+#faceCareContainer,
+#bodyCareContainer,
+#hairCareContainer,
+#cartContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+#faceCareContainer > div,
+#bodyCareContainer > div,
+#hairCareContainer > div,
+#cartContainer > div {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

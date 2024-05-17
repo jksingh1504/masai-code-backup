@@ -1,0 +1,178 @@
+1. create collection 1
+
+// Create Collection
+db.createCollection("collection1")
+
+// Insert Data
+db.collection1.insertMany([
+   {
+      _id: 1,
+      name: "John",
+      age: 25,
+      address: "123 Main St"
+   },
+   {
+      _id: 2,
+      name: "Jane",
+      age: 35,
+      address: "456 Main St"
+   },
+   {
+      _id: 3,
+      name: "Bob",
+      age: 45,
+      address: "789 Main St"
+   },
+   {
+      _id: 4,
+      name: "Alice",
+      age: 55,
+      address: "246 Main St"
+   }
+])
+
+2. create collection 2 
+
+// Create Collection
+db.createCollection("collection2")
+
+// Insert Data
+db.collection2.insertMany([
+   {
+      _id: 1,
+      address: "123 Main St",
+      zipcode: "12345"
+   },
+   {
+      _id: 2,
+      address: "456 Main St",
+      zipcode: "54321"
+   },
+   {
+      _id: 3,
+      address: "789 Main St",
+      zipcode: "98765"
+   },
+   {
+      _id: 4,
+      address: "246 Main St",
+      zipcode: "24680"
+   }
+])
+
+3. create collection 3
+
+// Create Collection
+db.createCollection("collection3")
+
+// Insert Data
+db.collection3.insertMany([
+   {
+      _id: 1,
+      zipcode: "12345",
+      city: "New York",
+      state: "NY"
+   },
+   {
+      _id: 2,
+      zipcode: "54321",
+      city: "Chicago",
+      state: "IL"
+   },
+   {
+      _id: 3,
+      zipcode: "98765",
+      city: "Los Angeles",
+      state: "CA"
+   },
+   {
+      _id: 4,
+      zipcode: "24680",
+      city: "Miami",
+      state: "FL"
+   }
+])
+
+4. create collection 4
+
+// Create Collection
+db.createCollection("collection4")
+
+// Insert Data
+db.collection4.insertMany([
+   {
+      _id: 1,
+      state: "NY",
+      country: "USA"
+   },
+   {
+      _id: 2,
+      state: "IL",
+      country: "USA"
+   },
+   {
+      _id: 3,
+      state: "CA",
+      country: "USA"
+   },
+   {
+      _id: 4,
+      state: "FL",
+      country: "USA"
+   },
+   {
+      _id: 5,
+      state: "MH",
+      country: "India"
+   },
+   {
+      _id: 6,
+      state: "DL",
+      country: "India"
+   }
+])
+
+
+5. Use the $lookup operator to perform a join on the first and second collections, so that the resulting documents contain both the personal information from the first collection and the zip code information from the second collection.
+
+db.collection1.aggregate([
+   {
+      $lookup: {
+         from: "collection2",
+         localField: "address",
+         foreignField: "address",
+         as: "zipcode_info"
+      }
+   }
+])
+
+
+6. Chain another $lookup again and again, so that the resulting document contains the personal info from the first collection, zip code info from the second collection, state from third collection and country from the fourth collection
+
+db.collection1.aggregate([
+   {
+      $lookup: {
+         from: "collection2",
+         localField: "address",
+         foreignField: "address",
+         as: "zipcode_info"
+      }
+   },
+   {
+      $lookup: {
+         from: "collection3",
+         localField: "zipcode_info.zipcode",
+         foreignField: "zipcode",
+         as: "city_state_info"
+      }
+   },
+   {
+      $lookup: {
+         from: "collection4",
+         localField: "city_state_info.state",
+         foreignField: "state",
+         as: "country_info"
+      }
+   }
+])
+

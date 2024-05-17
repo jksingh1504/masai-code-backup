@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Masai Mart</title>
+		<link rel="stylesheet" href="./stylesheets/Navbar.css" />
+		<link rel="stylesheet" href="./stylesheets/ProductContainer.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Icons"
+		/>
+		<style>
+			body {
+				font-family: sans-serif;
+				background-color: rgb(255, 255, 188);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Navbar">
+			<div>
+				<img
+					src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f6cd-fe0f.svg"
+					alt="error"
+				/>
+				<h2>Masai Mart</h2>
+			</div>
+
+			<div>
+				<div>
+					<h3 class="active">Products</h3>
+				</div>
+				<div>
+					<h3 onclick="gotoWishlist()">Wishlist</h3>
+				</div>
+			</div>
+		</div>
+		<br /><br /><br /><br /><br /><br />
+		<h1 style="width: 90%; margin: auto; color: #744eaa">Our Best Products</h1>
+		<br />
+		<br />
+		<div id="ProductContainer">
+			<div>
+				<p>Filer By Category</p>
+				<select name="Category">
+					<option value="women">Women</option>
+					<option value="kids">Kids</option>
+					<option value="homedecore">HomeDecor</option>
+				</select>
+				<br /><br /><br />
+				<p>Sort by</p>
+				<select name="sort" id="sort" onchange="sort()">
+					<option value="asc">low to high</option>
+					<option value="desc">high to low</option>
+				</select>
+			</div>
+			<div id="productList"></div>
+			<div>
+				<br /><br /><br />
+				<button onclick="prevPage()">previos page</button>
+				<button onclick="next()">next page</button>
+				<br /><br /><br />
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="./controls/index.js"></script>
+
+<script>
+	const gotoWishlist = () => {
+		window.location.href = "wishlist.html";
+	};
+
+	const gotoHome = () => {
+		window.location.href = "index.html";
+	};
+
+	let curPage = 1;
+	let prevButton=document.querySelectorAll("#productList+div>button:nth-child(4)")
+	let nextButton=document.querySelectorAll("#productList+div>button:nth-child(5)")
+	// console.log(prevButton)
+	if(curPage==1){
+		prevButton[0].disabled=true
+	}else prevButton[0].disabled=false
+
+	function prevPage() {
+		if (curPage > 1) {
+			nextButton[0].disabled=false
+			document.getElementById("sort").value = "asc";
+			curPage--;
+			getData(curPage, 12);
+			if(curPage==1){
+				prevButton[0].disabled=true
+			}
+		} else {
+			event.target.disabled = true;
+			return;
+		}
+	}
+
+	function next() {
+		if (curPage < 4) {
+			prevButton[0].disabled=false;
+			document.getElementById("sort").value = "asc";
+			curPage++;
+			getData(curPage, 12);
+			if (curPage == 4) {
+				event.target.disabled = true;
+			}
+		} else return;
+	}
+
+	function sort() {
+		// console.log(event)
+		getData(curPage, 12, event.target.value);
+	}
+</script>

@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "name": "Full Stack Developement",
+      "author": "Masai",
+      "image": "https://cdn-icons-png.flaticon.com/512/1532/1532556.png",
+      "content": "Let's learn html!",
+      "category": "html",
+      "like": 21,
+      "dislike": 31,
+      "id": 1
+    },
+    {
+      "name": "Intro t0 React",
+      "author": "Albert",
+      "image": "https://www.datocms-assets.com/45470/1631110818-logo-react-js.png",
+      "content": "Let's learn react",
+      "category": "react",
+      "like": 2,
+      "dislike": 1,
+      "id": 2
+    }
+  ]
+}

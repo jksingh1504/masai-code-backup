@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": 13,
+            "brand": "blackberrys",
+            "title": "Men Linen Regular Fit",
+            "image": "https://picsum.photos/200",
+            "category": "women",
+            "price": 1650
+        },
+        {
+            "id": 14,
+            "brand": "blackberrys",
+            "title": "A line kurta",
+            "image": "https://picsum.photos/200",
+            "category": "women",
+            "price": 1750
+        },
+        {
+            "id": 15,
+            "brand": "allen-solly",
+            "title": "A line kurta",
+            "image": "https://picsum.photos/200",
+            "category": "women",
+            "price": 1350
+        },
+        {
+            "id": 16,
+            "brand": "van-heusen",
+            "title": "Anarkali kurta",
+            "image": "https://picsum.photos/200",
+            "category": "women",
+            "price": 1200
+        },
+        {
+            "id": 17,
+            "brand": "van-heusen",
+            "title": "Anarkali kurta",
+            "image": "https://picsum.photos/200",
+            "category": "women",
+            "price": 1250
+        },
+        {
+            "id": 18,
+            "brand": "twills",
+            "title": "Anarkali kurta",
+            "image": "https://picsum.photos/200",
+            "category": "women",
+            "price": 2699
+        }
+    ],
+    "totalPages": 2
+}

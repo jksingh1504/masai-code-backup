@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": 25,
+      "brand": "van-heusen",
+      "title": "Girls Checked Print Flared Dress",
+      "image": "https://picsum.photos/200",
+      "category": "kids",
+      "price": 4599
+    },
+    {
+      "id": 26,
+      "brand": "blackberrys",
+      "title": "Girls Checked Print Flared Dress",
+      "image": "https://picsum.photos/200",
+      "category": "kids",
+      "price": 4599
+    },
+    {
+      "id": 27,
+      "brand": "roadster",
+      "title": "Some Roadster Tshirt",
+      "image": "https://picsum.photos/200",
+      "category": "kids",
+      "price": 3099
+    },
+    {
+      "id": 28,
+      "brand": "twills",
+      "title": "Pack of 3 Boys T-shirts",
+      "image": "https://picsum.photos/200",
+      "category": "kids",
+      "price": 3499
+    },
+    {
+      "id": 29,
+      "brand": "blackberrys",
+      "title": "Boys Color Blocked T-shirt",
+      "image": "https://picsum.photos/200",
+      "category": "kids",
+      "price": 2899
+    },
+    {
+      "id": 30,
+      "brand": "twills",
+      "title": "Pack of 3 Round Necked Shirts",
+      "image": "https://picsum.photos/200",
+      "category": "kids",
+      "price": 2299
+    }
+  ],
+  "totalPages": 7
+}

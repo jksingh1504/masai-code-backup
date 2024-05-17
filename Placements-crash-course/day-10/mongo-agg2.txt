@@ -1,0 +1,69 @@
+1. Write an aggregation pipeline to get the total number of orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", total_orders: { $sum: 1 } } }
+]);
+
+2. Write an aggregation pipeline to get the total price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", total_price: { $sum: "$orders.price" } } }
+]);
+
+3. Write an aggregation pipeline to get the average price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", average_price: { $avg: "$orders.price" } } }
+]);
+
+4. Write an aggregation pipeline to get the highest price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", highest_price: { $max: "$orders.price" } } }
+]);
+
+5. Write an aggregation pipeline to get the lowest price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", lowest_price: { $min: "$orders.price" } } }
+]);
+
+6. Write an aggregation pipeline to get the total number of orders and the total price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", total_orders: { $sum: 1 }, total_price: { $sum: "$orders.price" } } }
+]);
+
+7. Write an aggregation pipeline to get the total number of orders and the average price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", total_orders: { $sum: 1 }, average_price: { $avg: "$orders.price" } } }
+]);
+
+8. Write an aggregation pipeline to get the highest price and the lowest price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", highest_price: { $max: "$orders.price" }, lowest_price: { $min: "$orders.price" } } }
+]);
+
+9. Write an aggregation pipeline to get the total number of orders and the highest price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", total_orders: { $sum: 1 }, highest_price: { $max: "$orders.price" } } }
+]);
+
+10. Write an aggregation pipeline to get the total number of orders, the total price, and the average price of all orders for each customer:
+
+db.customers.aggregate([
+    { $unwind: "$orders" },
+    { $group: { _id: "$name", total_orders: { $sum: 1 }, total_price: { $sum: "$orders.price" }, average_price: { $avg: "$orders.price" } } }
+]);

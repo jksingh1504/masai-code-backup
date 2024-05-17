@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid black;
+}

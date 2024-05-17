@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "brand": "roadster",
+      "title": "cotton Checked Casual Shirt",
+      "image": "https://picsum.photos/200",
+      "category": "men",
+      "price": 844
+    },
+    {
+      "id": 2,
+      "brand": "blackberrys",
+      "title": "Regukar Fit Printed Shirt",
+      "image": "https://picsum.photos/200",
+      "category": "men",
+      "price": 699
+    },
+    {
+      "id": 3,
+      "brand": "van-heusen",
+      "title": "Regukar Fit Printed Shirt",
+      "image": "https://picsum.photos/200",
+      "category": "men",
+      "price": 1400
+    },
+    {
+      "id": 4,
+      "brand": "van-heusen",
+      "title": "Cotton Fit Printed Shirt",
+      "image": "https://picsum.photos/200",
+      "category": "men",
+      "price": 1500
+    },
+    {
+      "id": 5,
+      "brand": "van-heusen",
+      "title": "Cotton Fit Printed Shirt",
+      "image": "https://picsum.photos/200",
+      "category": "men",
+      "price": 1299
+    },
+    {
+      "id": 6,
+      "brand": "allen-solly",
+      "title": "Checked Regular Fit Printed Shirt",
+      "image": "https://picsum.photos/200",
+      "category": "men",
+      "price": 999
+    }
+  ],
+  "totalPages": 7
+}

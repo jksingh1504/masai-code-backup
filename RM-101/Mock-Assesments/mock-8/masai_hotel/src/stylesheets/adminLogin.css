@@ -1,0 +1,46 @@
+#userReg>h1,#userReg h3{
+    color: #dd2e44;
+}
+
+#userReg>h1{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-size: 32px ;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#userReg h3{
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+#userReg{
+    text-align: center;
+}
+
+#form{
+    text-align: center;
+    width: 30%;
+    margin:auto
+}
+
+#form input[type="number"],#form input[type="text"],#form input[type="submit"]{
+    width: 100%;
+    outline: none;
+    padding: 10px 20px;
+    border: 2px solid rgb(171, 91, 246);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form select{
+    width: 100%;
+    border: 2px solid rgb(171, 91, 246);
+    padding:  10px 20px;
+    border-radius: 4px;
+}
+
+form >input:last-child{
+    background-color: rgb(171, 91, 246);
+}

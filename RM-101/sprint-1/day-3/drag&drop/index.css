@@ -1,0 +1,32 @@
+*{
+    font-family: sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin:auto;
+    gap: 20px;
+}
+
+#container>div{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: flex-start;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: aliceblue;
+}
+
+.dragable{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.dragable span{
+    color: rgb(125, 125, 125);
+}

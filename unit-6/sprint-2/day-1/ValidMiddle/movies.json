@@ -1,0 +1,15 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "Name": "dr strange",
+            "Rating": 4.4,
+            "Description": "nice movie",
+            "Genre": "fantasy sci-fi horror",
+            "Cast": [
+                "benedict cumberbach",
+                "wanda maximof"
+            ]
+        }
+    ]
+}

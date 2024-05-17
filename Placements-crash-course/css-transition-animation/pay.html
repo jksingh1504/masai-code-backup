@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/13b70e6ff5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: #fcc43b;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .circle {
+        width: 400px;
+        height: 400px;
+        justify-content: c;
+        border-radius: 50%;
+        position: relative;
+        animation: Rotate 8s ease infinite;
+      }
+      @keyframes Rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .ball {
+        position: absolute;
+        font-size: 20px;
+        padding: 10px 12px;
+        border-radius: 50%;
+        background-color: #fcd87d;
+      }
+      .ball:nth-child(1) {
+        left: 178px;
+        top: -22px;
+      }
+      .ball:nth-child(2) {
+        top: 44px;
+        left: 326px;
+      }
+      .ball:nth-child(3) {
+        top: 178px;
+        left: 378px;
+      }
+      .ball:nth-child(4) {
+        top: 312px;
+        left: 326px;
+      }
+      .ball:nth-child(5) {
+        left: 178px;
+        top: 378px;
+      }
+      .ball:nth-child(6) {
+        top: 312px;
+        left: 30px;
+      }
+      .ball:nth-child(7) {
+        left: -22px;
+        top: 178px;
+      }
+      .ball:nth-child(8) {
+        top: 44px;
+        left: 30px;
+      }
+      #container {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        margin-top: 150px;
+      }
+      #container > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .paybills {
+        display: inline-flex;
+        justify-content: right;
+        padding: 0px 10px;
+        animation: slide-in-out 8s ease infinite;
+        position: relative;
+      }
+      @keyframes slide-in-out {
+        0% {
+          color: white;
+          transform: translateX(-100%);
+        }
+        50% {
+          color: black;
+          transform: translateX(0);
+        }
+        100% {
+          color: white;
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="paybills"><h1>Pay bills instantly</h1></div>
+      <div>
+        <div class="circle">
+          <div class="ball"><i class="fa-solid fa-phone"></i></div>
+          <div class="ball"><i class="fa-solid fa-laptop"></i></div>
+          <div class="ball"><i class="fa-brands fa-twitter"></i></div>
+          <div class="ball"><i class="fa-brands fa-facebook"></i></div>
+          <div class="ball"><i class="fa-brands fa-youtube"></i></div>
+          <div class="ball"><i class="fa-regular fa-lightbulb"></i></div>
+          <div class="ball"><i class="fa-solid fa-camera"></i></div>
+          <div class="ball"><i class="fa-solid fa-home"></i></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

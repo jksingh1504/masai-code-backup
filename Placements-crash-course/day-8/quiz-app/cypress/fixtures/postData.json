@@ -1,0 +1,9 @@
+{
+  "problem": "What is JSX in React?",
+  "a": "JavaScript Syntax Extension",
+  "b": "JavaScript XML",
+  "c": "JavaScript Extension",
+  "d": "None",
+  "correct": "b",
+  "weightage": 7
+}

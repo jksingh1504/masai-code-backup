@@ -1,0 +1,34 @@
+{
+  "todo": [
+    {
+      "task": "Buy milk",
+      "complete": true,
+      "details": "this should be completed till 8'O clock morning",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "task": "Prepare breakfast",
+      "complete": false,
+      "details": "Yet to be added"
+    },
+    {
+      "task": "hello there",
+      "complete": true,
+      "id": 4,
+      "details": "Yet to be added"
+    },
+    {
+      "task": "hello",
+      "complete": true,
+      "id": 5,
+      "details": "Yet to be added"
+    },
+    {
+      "task": "hello",
+      "complete": false,
+      "details": "Yet to be added",
+      "id": 6
+    }
+  ]
+}

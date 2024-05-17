@@ -1,0 +1,46 @@
+#Navbar{
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(223, 223, 250);
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    height: 70px;
+    align-items: center;
+}
+
+#Navbar>div:first-child{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Navbar>div:first-child h2{
+    font-size: 28px;
+    margin-left: 10px;
+    color: #dd2e44;
+}
+
+#Navbar>div:first-child img{
+    height: 40px;
+}
+
+#Navbar>div:last-child{
+    display: flex;
+    gap: 20px;
+}
+
+#Navbar>div:last-child h3{
+    cursor: pointer;
+}
+
+.active{
+    color:#dd2e44;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}

@@ -1,0 +1,44 @@
+{
+  "quizes": [
+    {
+      "problem": "What is React?",
+      "a": "Framework",
+      "b": "Library",
+      "c": "Package",
+      "d": "None",
+      "correct": "b",
+      "weightage": 5,
+      "id": 1
+    },
+    {
+      "problem": "What is React?",
+      "a": "Framework",
+      "b": "Library",
+      "c": "Package",
+      "d": "None",
+      "correct": "b",
+      "weightage": 6,
+      "id": 2
+    },
+    {
+      "problem": "What is React?",
+      "a": "Framework",
+      "b": "Library",
+      "c": "Package",
+      "d": "None",
+      "correct": "b",
+      "weightage": 3,
+      "id": 3
+    },
+    {
+      "problem": "test",
+      "a": "test",
+      "b": "testt",
+      "c": "test",
+      "d": "test",
+      "correct": "d",
+      "weightage": 5,
+      "id": 4
+    }
+  ]
+}

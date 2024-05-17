@@ -1,0 +1,6 @@
+POST,/posts/create,PostmanRuntime/7.29.2
+POST,/posts/create,PostmanRuntime/7.29.2
+GET,/posts,PostmanRuntime/7.29.2
+PUT,/posts/2?password=54123,PostmanRuntime/7.29.2
+DELETE,/posts/2?password=54123,PostmanRuntime/7.29.2
+PATCH,/posts/1?password=54123,PostmanRuntime/7.29.2

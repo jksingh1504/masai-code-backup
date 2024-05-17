@@ -1,0 +1,19 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "task": "take a bath",
+            "isCompleted": true
+        },
+        {
+            "id": 2,
+            "task": "buy milk",
+            "isCompleted": false
+        },
+        {
+            "id": 3,
+            "task": "prepare breakfast",
+            "isCompleted": false
+        }
+    ]
+}

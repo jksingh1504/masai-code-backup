@@ -1,0 +1,27 @@
+/* basic cart CSS */
+#discount {
+  /* color:white; */
+  height: 25px;
+  text-align: center;
+  width: 200px; /* Set the width of the container div */
+  overflow: hidden; /* Hide any overflowing content */
+  width: 100%;
+  background-color: #73cdc1;
+}
+
+.marquee {
+  display: inline-block;
+  font-weight: 500;
+  white-space: nowrap; /* Prevent line breaks */
+  animation: marquee 15s linear infinite; /* Run the marquee animation continuously */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+

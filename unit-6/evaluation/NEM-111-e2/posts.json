@@ -1,0 +1,10 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "dr strange",
+            "content": "movie",
+            "author": "me"
+        }
+    ]
+}

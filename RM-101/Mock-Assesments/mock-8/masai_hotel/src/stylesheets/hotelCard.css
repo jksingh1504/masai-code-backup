@@ -1,0 +1,33 @@
+.hotelCard{
+    display: grid;
+    grid-template-columns: 45% 54%;
+    gap:30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hotelCard img{
+    border-radius: 10px 0px 0px 10px;
+    width: 100%;
+    aspect-ratio: 15/9;
+    min-height: 100%;
+}
+
+.hotelCard h1{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.hotelCard p{
+    margin: 20px 0px;
+}
+
+#container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

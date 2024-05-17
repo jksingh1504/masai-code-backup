@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./stylesheets/user.css" />
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="userReg">
+			<h1>Register for Our exclusive Masaiverse event</h1>
+			<br /><br />
+			<div id="form">
+				<form onsubmit="handleSubmit()">
+					<h3 style="text-align: left">Name</h3>
+					<input name="name" required type="text" placeholder="Please enter your name" />
+					<br />
+					<h3 style="text-align: left">Age</h3>
+					<input name="age"  required type="number" placeholder="Please enter your age" />
+					<br />
+					<h3 style="text-align: left">Place</h3>
+					<input name="place" required type="text" placeholder="Please enter hometown/city" />
+                    <br />
+					<h3 style="text-align: left">Batch</h3>
+                    <select name="batch_name">
+                        <option value="">Please choose your batch</option>
+                        <option value="WEB-13">WEB-13</option>
+                        <option value="WEB-14">WEB-14</option>
+                        <option value="WEB-15">WEB-15</option>
+                        <option value="WEB-16">WEB-16</option>
+                    </select>
+
+                    <br />
+					<h3 style="text-align: left">Batch</h3>
+                    <select name="profession">
+                        <option value="">Please choose your profession</option>
+                        <option value="FSD">Full Stack Developer</option>
+                        <option value="fontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="student">Student</option>
+                    </select>
+                    <br><br><br>
+                    <input type="submit" value="submit">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<script src="../controls/user.js"></script>

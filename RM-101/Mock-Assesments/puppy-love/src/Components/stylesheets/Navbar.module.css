@@ -1,0 +1,38 @@
+#Navbar{
+    display: flex;
+    border: 1px solid black;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(249, 234, 234);
+    padding: 0px 60px;
+    align-items: center;
+    opacity: 1;
+    height: 70px;
+    justify-content: space-between;
+}
+
+#Navbar>a div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+#Navbar>a:nth-child(2)>div{
+    gap: 10px;
+    position: absolute;
+    right: 180px;
+    top: 0;
+    height: 70px;
+    color: black;
+}
+
+
+#Navbar img{
+    width: 40px;
+    margin-right: 16px;
+}

@@ -1,0 +1,28 @@
+#userReg{
+    text-align: center;
+}
+
+#form{
+    text-align: center;
+    width: 30%;
+    margin:auto
+}
+
+#form input{
+    width: 100%;
+    outline: none;
+    padding: 10px 20px;
+    border: 2px solid rgb(171, 91, 246);
+    border-radius: 4px;
+}
+
+#form select{
+    width: 100%;
+    border: 2px solid rgb(171, 91, 246);
+    padding:  10px 20px;
+    border-radius: 4px;
+}
+
+form >input:last-child{
+    background-color: rgb(171, 91, 246);
+}

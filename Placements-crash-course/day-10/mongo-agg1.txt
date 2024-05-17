@@ -1,0 +1,20 @@
+1. Find the largest population city in every state:
+
+db.zips.aggregate([
+    { $sort: { state: 1, pop: -1 } },
+    { $group: { _id: "$state", city: { $first: "$city" }, population: { $max: "$pop" } } }
+]);
+
+2. Find the average population per state by cities:
+
+db.zips.aggregate([
+    { $group: { _id: "$state", average_population: { $avg: "$pop" } } }
+]);
+
+
+3. Find the lowest population city:
+
+db.zips.aggregate([
+    { $sort: { pop: 1 } },
+    { $limit: 1 }
+]);

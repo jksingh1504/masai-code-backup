@@ -1,0 +1,25 @@
+db.sales.aggregate([
+  // Match documents for the past month
+  {
+    $match: {
+      date: {
+        $gte: {
+          $subtract: [new Date(), { $multiply: [30, 24, 60, 60, 1000] }] // 30 days ago
+        }
+      }
+    }
+  },
+  // Group by item and calculate total quantity sold, average price, and total revenue
+  {
+    $group: {
+      _id: "$item",
+      totalQuantitySold: { $sum: "$quantity" },
+      averagePrice: { $avg: "$price" },
+      totalRevenue: { $sum: "$total" }
+    }
+  },
+  // Sort by total quantity sold in descending order
+  { $sort: { totalQuantitySold: -1 } },
+  // Limit to the top 10 items
+  { $limit: 10 }
+])

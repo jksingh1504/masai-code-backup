@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Movie</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        width: 100%;
+        background-color: black;
+        padding: 40px;
+        min-height: 100vh;
+      }
+      .navbar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        padding: 40px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: yellow;
+      }
+      .searchbar {
+        width: 250px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+      }
+      .search-result {
+        display: grid;
+        grid-auto-rows: max-content;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 230px));
+        gap: 30px;
+        justify-content: center;
+        padding-top: 150px;
+      }
+      .search-result > div {
+        background-color: white;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        cursor: pointer;
+      }
+      .search-result > div > :is(p, b) {
+        padding: 0 20px;
+        margin: 10px 0;
+        /*css for line clamp */
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .search-result > div img {
+        width: 100%;
+        aspect-ratio: 1/1.6;
+        border-radius: 10px 10px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <nav class="navbar">
+        <h3 style="color: red">Masai Movie</h3>
+        <div>
+          <span style="font-size: 16px">Search a movie : </span
+          ><input
+            class="searchbar"
+            placeholder="type a movie name"
+            type="text"
+            onkeyup="debouncedSearch(this.value)"
+          />
+        </div>
+      </nav>
+      <div class="search-result"></div>
+    </div>
+    <script>
+      // Function to perform API call
+      async function search(query) {
+        count++;
+        console.log(count, query);
+        // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint
+        const response = await fetch(
+          `https://www.omdbapi.com/?apikey=1e738912&s=${query}`
+        );
+        const data = await response.json();
+        console.log(data);
+        displayResults(data);
+      }
+      // Function to display search results
+      function displayResults(results) {
+        const [searchResults] =
+          document.getElementsByClassName("search-result");
+        if (results.Response == "False") {
+          searchResults.innerHTML = `<h1 style = "color: white">${results.Error}.....</h1>`;
+          return;
+        }
+        searchResults.style.gridTemplateColumns =
+          "repeat(auto-fit, minmax(180px, 230px))";
+        searchResults.innerHTML = "";
+        results.Search.forEach((result) => {
+          const item = document.createElement("div");
+          const poster = document.createElement("img");
+          poster.src = result.Poster;
+          const br = document.createElement("br");
+          const title = document.createElement("b");
+          title.innerText = "Title : " + result.Title;
+          const year = document.createElement("p");
+          year.innerText = "Year : " + result.Year;
+          const type = document.createElement("b");
+          type.innerText = "Type : " + result.Type;
+          item.append(poster, title, year, type);
+          item.addEventListener("click", async () => {
+            const response = await fetch(
+              `https://www.omdbapi.com/?apikey=1e738912&i=${result.imdbID}`
+            );
+            const data = await response.json();
+            searchResults.innerHTML = "";
+            searchResults.style.gridTemplateColumns = "40%";
+            item.style.margin = "auto";
+            newItem = document.createElement("div");
+            const poster = document.createElement("img");
+            poster.src = data.Poster;
+            const br = document.createElement("br");
+            const title = document.createElement("b");
+            title.innerText = "Title : " + data.Title;
+            const year = document.createElement("p");
+            year.innerText = "Year : " + data.Year;
+            const type = document.createElement("b");
+            type.innerText = "Type : " + data.Type;
+            const rating = document.createElement("p");
+            rating.innerText = "Rating : " + data.Rated;
+            const cast = document.createElement("p");
+            cast.innerText = "Cast : " + data.Actors;
+            const plot = document.createElement("p");
+            plot.innerText = "Plot: " + data.Plot;
+            newItem.append(poster, title, year, type, rating, cast, plot);
+            searchResults.append(newItem);
+          });
+          searchResults.append(item);
+        });
+      }
+      let timeOutRef;
+      let count = 0;
+      // Debounced search function
+      const debouncedSearch = (query) => {
+        console.log(query);
+        clearTimeout(timeOutRef);
+        query = query.trim();
+        if (query.length) {
+          timeOutRef = setTimeout(() => search(query), 500);
+        }
+      };
+    </script>
+  </body>
+</html>

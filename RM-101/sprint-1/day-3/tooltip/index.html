@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				font-family: sans-serif;
+				text-align: center;
+			}
+			#tooltip {
+				display: flex;
+				gap: 20px;
+				justify-content: center;
+			}
+			#tooltip > button {
+				background-color: teal;
+				color: white;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 10px;
+				position: relative;
+			}
+
+            /* css for left tooltip */
+			#tooltip > button:first-child span {
+				position: absolute;
+				top: 0;
+				left: -116%;
+				background-color: rgb(145, 145, 145);
+				padding: 10px 20px;
+				border-radius: 8px;
+				display: none;
+			}
+
+			#tooltip > button:first-child span::after {
+				content: "";
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				top: 36%;
+				background-color: rgb(145, 145, 145);
+				right: -5px;
+				transform: rotate(45deg);
+			}
+			#tooltip > button:first-child:hover > span {
+				display: block;
+			}
+
+            /* css for top tooltip */
+            #tooltip > button:nth-child(2) span {
+				position: absolute;
+				left: 0;
+				top: -120%;
+				background-color: rgb(145, 145, 145);
+				padding: 10px 20px;
+				border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                visibility: hidden;
+			}
+
+			#tooltip > button:nth-child(2) span::after {
+				content: "";
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				bottom: -5px;
+				background-color: rgb(145, 145, 145);
+				right: 40%;
+				transform: rotate(45deg);
+			}
+			#tooltip > button:nth-child(2):hover > span {
+				visibility: visible;
+			}
+
+
+            /* css for bottom tooltip */
+            #tooltip > button:nth-child(3) span {
+				position: absolute;
+				left: 0;
+				bottom: -120%;
+				background-color: rgb(145, 145, 145);
+				padding: 10px 20px;
+				border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                visibility: hidden;
+			}
+
+			#tooltip > button:nth-child(3) span::after {
+				content: "";
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				top: -5px;
+				background-color: rgb(145, 145, 145);
+				right: 42%;
+				transform: rotate(45deg);
+			}
+			#tooltip > button:nth-child(3):hover > span {
+				visibility: visible;
+			}
+
+            /* css for right tooltip */
+            #tooltip > button:nth-child(4) span {
+				position: absolute;
+				top: 0;
+				right: -116%;
+				background-color: rgb(145, 145, 145);
+				padding: 10px 20px;
+				border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                visibility: hidden;
+			}
+
+			#tooltip > button:nth-child(4) span::after {
+				content: "";
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				left: -5px;
+				background-color: rgb(145, 145, 145);
+				top: 36%;
+				transform: rotate(45deg);
+			}
+			#tooltip > button:nth-child(4):hover > span {
+				visibility: visible;
+			}
+		</style>
+	</head>
+	<body>
+		<br>
+		<h1>CSS Tooltip</h1>
+		<br /><br />
+		<div id="tooltip">
+			<button><span>Left</span>Left</button>
+			<button><span>Top</span>Top</button>
+			<button><span>Bottom</span>Bottom</button>
+			<button><span>Right</span>Right</button>
+		</div>
+	</body>
+</html>

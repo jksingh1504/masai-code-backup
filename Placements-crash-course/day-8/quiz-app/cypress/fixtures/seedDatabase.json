@@ -1,0 +1,102 @@
+[
+  {
+    "problem": "What is React?",
+    "a": "Framework",
+    "b": "Library",
+    "c": "Package",
+    "d": "None",
+    "correct": "b",
+    "weightage": 3,
+    "id": 1
+  },
+  {
+    "problem": "What is JSX in React?",
+    "a": "JavaScript Syntax Extension",
+    "b": "JavaScript XML",
+    "c": "JavaScript Extension",
+    "d": "None",
+    "correct": "b",
+    "weightage": 9,
+    "id": 2
+  },
+  {
+    "problem": "What is the latest version of React?",
+    "a": "16.0",
+    "b": "17.0",
+    "c": "18.0",
+    "d": "19.0",
+    "correct": "c",
+    "weightage": 6,
+    "id": 3
+  },
+  {
+    "problem": "What is a state in React?",
+    "a": "Immutable",
+    "b": "Mutable",
+    "c": "Component",
+    "d": "None",
+    "correct": "a",
+    "weightage": 8,
+    "id": 4
+  },
+  {
+    "problem": "What is the purpose of the virtual DOM in React?",
+    "a": "Improve performance",
+    "b": "Render components faster",
+    "c": "Simplify component structure",
+    "d": "None",
+    "correct": "a",
+    "weightage": 9,
+    "id": 5
+  },
+  {
+    "problem": "What is the concept of props in React?",
+    "a": "Properties passed to a component",
+    "b": "Private variables in a component",
+    "c": "Internal state of a component",
+    "d": "None",
+    "correct": "a",
+    "weightage": 7,
+    "id": 6
+  },
+  {
+    "problem": "What is the purpose of the useEffect hook in React?",
+    "a": "Managing component's lifecycle",
+    "b": "Handling user events",
+    "c": "Styling components",
+    "d": "None",
+    "correct": "a",
+    "weightage": 8,
+    "id": 7
+  },
+  {
+    "problem": "What is the purpose of the useState hook in React?",
+    "a": "Managing component's state",
+    "b": "Handling HTTP requests",
+    "c": "Creating reusable components",
+    "d": "None",
+    "correct": "a",
+    "weightage": 9,
+    "id": 8
+  },
+  {
+    "problem": "What is the purpose of the useContext hook in React?",
+    "a": "Sharing data between components",
+    "b": "Creating class components",
+    "c": "Rendering components conditionally",
+    "d": "None",
+    "correct": "a",
+    "weightage": 6,
+    "id": 9
+  },
+  {
+    "problem": "What is the purpose of the useRef hook in React?",
+    "a": "Accessing DOM elements",
+    "b": "Handling form submissions",
+    "c": "Creating custom hooks",
+    "d": "None",
+    "correct": "a",
+    "weightage": 7,
+    "id": 10
+  }
+]

@@ -1,0 +1,16 @@
+.PuppyCard{
+    display: flex;
+    padding: 16px;
+    border-radius: 8px;
+    transition: transform 1s;
+    background-color: white;
+
+}
+
+.PuppyCard:hover{
+    transform: scale(1.07);
+}
+
+.PuppyCard img{
+    width: 100%;
+}

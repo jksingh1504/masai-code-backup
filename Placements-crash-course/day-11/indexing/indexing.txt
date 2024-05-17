@@ -1,0 +1,48 @@
+1. creat collection with 10 documents and specified fields 
+
+db.createCollection("people")
+
+db.people.insertMany([
+  { "name": "Alice", "age": 30, "location": "New York" },
+  { "name": "Bob", "age": 35, "location": "Los Angeles" },
+  { "name": "Charlie", "age": 25, "location": "Chicago" },
+  { "name": "David", "age": 40, "location": "Houston" },
+  { "name": "Emily", "age": 28, "location": "San Francisco" },
+  { "name": "Frank", "age": 32, "location": "Miami" },
+  { "name": "Grace", "age": 38, "location": "Seattle" },
+  { "name": "Henry", "age": 27, "location": "Boston" },
+  { "name": "Ivy", "age": 33, "location": "Atlanta" },
+  { "name": "Jack", "age": 29, "location": "Dallas" }
+])
+
+2. Create a compound index:
+
+db.people.createIndex({ "age": 1, "location": 1 })
+
+3. Use explain() to analyze the performance of a query that uses the compound index:
+
+db.people.find({ "age": { $gte: 30 }, "location": "New York" }).explain("executionStats")
+
+4. Create a single field index:
+
+db.people.createIndex({ "name": 1 })
+
+5. Use explain() to compare the performance of queries using the single field index and the compound index:
+
+// Query using the single field index
+db.people.find({ "name": "Alice" }).explain("executionStats")
+
+// Query using the compound index
+db.people.find({ "age": { $gte: 30 }, "location": "New York" }).explain("executionStats")
+
+6. Drop the single field index and create a multi-key index on an array field:
+
+// Add an array field to one of the documents
+db.people.updateOne({ "name": "Alice" }, { $set: { "interests": ["reading", "hiking"] } })
+
+// Create a multi-key index on the "interests" field
+db.people.createIndex({ "interests": 1 })
+
+7. Use explain() to analyze the performance of a query that uses the multi-key index:
+
+db.people.find({ "interests": "reading" }).explain("executionStats")

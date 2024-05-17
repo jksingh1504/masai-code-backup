@@ -1,0 +1,32 @@
+html body{
+    background-color: rgb(253, 255, 189);
+}
+
+#Masaiverse {
+	display: flex;
+	width: 50%;
+	margin: auto;
+	gap: 100px;
+    justify-content: center;
+}
+
+#Masaiverse > div {
+	cursor: pointer;
+	transition: transform 1s, box-shadow 1s;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#Masaiverse > div img {
+	height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+#Masaiverse > div:hover {
+	transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

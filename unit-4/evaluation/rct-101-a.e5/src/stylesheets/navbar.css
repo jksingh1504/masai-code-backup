@@ -1,0 +1,66 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: violet;
+    align-items: center;
+    padding:0px 30px
+}
+
+#navbar>div{
+    display: flex;
+    justify-content: space-between;
+    width:5%;
+}
+
+#navbar>a>div{
+    display: flex;
+    justify-content: space-between;
+    width:5%;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar>div a{
+    text-decoration: none;
+    color: black;
+    padding:0px 50px;
+}
+
+#totalProduct{
+    border: 1px solid black;
+    border-radius: 50%;
+    width:20px;
+    text-align: center;
+    background-color: white;
+}
+
+#navbar>a>div:last-child{
+    justify-content:left;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin:auto;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+#products>div{
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#products img{
+    width:100%
+}
+
+#products button{
+    width:100%;
+    border: none;
+    background-color: blueviolet;
+    height:50px;
+    color:white;
+}

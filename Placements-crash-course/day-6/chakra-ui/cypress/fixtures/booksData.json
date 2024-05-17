@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isbn": "9780061120084",
+    "category": "classic",
+    "publication_date": "1960-07-11"
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "isbn": "9780451524935",
+    "category": "dystopian",
+    "publication_date": "1949-06-08"
+  },
+  {
+    "id": 3,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "isbn": "9780060850524",
+    "category": "dystopian",
+    "publication_date": "1932-01-01"
+  },
+  {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565",
+    "category": "classic",
+    "publication_date": "1925-04-10"
+  },
+  {
+    "id": 5,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "isbn": "9780141439518",
+    "category": "romance",
+    "publication_date": "1813-01-28"
+  },
+  {
+    "id": 6,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isbn": "9780316769488",
+    "category": "coming_of_age",
+    "publication_date": "1951-07-16"
+  },
+  {
+    "id": 7,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "isbn": "9780544003415",
+    "category": "fantasy",
+    "publication_date": "1954-07-29"
+  },
+  {
+    "id": 8,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "isbn": "9780590353403",
+    "category": "fantasy",
+    "publication_date": "1997-06-26"
+  },
+  {
+    "id": 9,
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "isbn": "9780451526342",
+    "category": "political_satire",
+    "publication_date": "1945-08-17"
+  },
+  {
+    "id": 10,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "isbn": "9780547928227",
+    "category": "fantasy",
+    "publication_date": "1937-09-21"
+  },
+  {
+    "id": 11,
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "isbn": "9780307474278",
+    "category": "mystery",
+    "publication_date": "2003-03-18"
+  },
+  {
+    "id": 12,
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "isbn": "9780307269751",
+    "category": "mystery",
+    "publication_date": "2005-08-23"
+  },
+  {
+    "id": 13,
+    "title": "The Adventures of Huckleberry Finn",
+    "author": "Mark Twain",
+    "isbn": "9780486280615",
+    "category": "classic",
+    "publication_date": "1884-12-10"
+  },
+  {
+    "id": 14,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "isbn": "9780141439570",
+    "category": "classic",
+    "publication_date": "1890-07-01"
+  },
+  {
+    "id": 15,
+    "title": "The Odyssey",
+    "author": "Homer",
+    "isbn": "9780140268867",
+    "category": "epic_poem",
+    "publication_date": "1890-07-01"
+  }
+]

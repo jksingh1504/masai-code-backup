@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../stylesheets/cars.css" />
+		<link rel="stylesheet" href="../stylesheets/navbar.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Icons"
+		/>
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="navbar">
+			<div>
+				<img
+					src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f697.svg"
+					alt=""
+				/>
+				<h3>Masai car</h3>
+			</div>
+
+			<div>
+				<div><a href="./Ad.html">Create Ad.</a></div>
+				<div class="active"><a href="#">Cars</a></div>
+				<div>
+					<a href="./WishList.html">WishList</a
+					><span class="material-icons"> favorite </span>
+				</div>
+			</div>
+		</div>
+		<br /><br /><br /><br /><br />
+
+		<h1 style="padding-left: 30px">Our best offerings for you</h1>
+		<br />
+
+		<div id="sortAndFilter">
+			<div>
+                <h3>sort by price</h3>
+				<select onchange="handlePriceSort()" name="Price" id="price">
+					<option value="">sort by price</option>
+                    <option value="ASC">low to high</option>
+                    <option value="DESC">high to low</option>
+				</select>
+			</div>
+
+            <div>
+                <h3>sort by kms</h3>
+				<select onchange="handlePriceSort()" name="kms" id="kms">
+					<option value="">sort by kms</option>
+                    <option value="ASC">low to high</option>
+                    <option value="DESC">high to low</option>
+				</select>
+			</div>
+		</div>
+        <br><br>
+
+		<div id="carCardParent"></div>
+	</body>
+</html>
+
+<script src="../controls/cars.js"></script>

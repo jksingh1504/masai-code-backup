@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": 34,
+            "brand": "blackberrys",
+            "title": "Set of 3 wall paintings",
+            "image": "https://picsum.photos/200",
+            "category": "homedecor",
+            "price": 6050
+        },
+        {
+            "id": 25,
+            "brand": "van-heusen",
+            "title": "Girls Checked Print Flared Dress",
+            "image": "https://picsum.photos/200",
+            "category": "kids",
+            "price": 4599
+        },
+        {
+            "id": 26,
+            "brand": "blackberrys",
+            "title": "Girls Checked Print Flared Dress",
+            "image": "https://picsum.photos/200",
+            "category": "kids",
+            "price": 4599
+        },
+        {
+            "id": 24,
+            "brand": "allen-solly",
+            "title": "Girls Solid Print Flared Dress",
+            "image": "https://picsum.photos/200",
+            "category": "kids",
+            "price": 3599
+        },
+        {
+            "id": 40,
+            "brand": "twills",
+            "title": "Set of 3 Owl",
+            "image": "https://picsum.photos/200",
+            "price": 3500,
+            "category": "homedecor"
+        },
+        {
+            "id": 28,
+            "brand": "twills",
+            "title": "Pack of 3 Boys T-shirts",
+            "image": "https://picsum.photos/200",
+            "category": "kids",
+            "price": 3499
+        }
+    ],
+    "totalPages": 7
+}

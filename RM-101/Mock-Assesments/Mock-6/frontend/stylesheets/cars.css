@@ -1,0 +1,37 @@
+#carCardParent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 26px;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.carCard {
+    padding: 16px;
+    border-radius: 10px;
+    transition: box-shadow 1s, transform 1s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.carCard p{
+    font-weight: 600;
+    color: rgb(33, 33, 143)
+}
+
+.carCard:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.carCard img{
+    width: 100%;
+}
+
+#sortAndFilter{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 100px;
+}

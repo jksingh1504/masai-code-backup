@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #grid {
+        display: grid;
+        width: 100vw;
+        height: min(100vw, 100vh);
+        grid-template-areas:
+          "a a b c"
+          "d e b h"
+          "f i b g";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1.1fr 1.1fr 1.1fr 0.8fr;
+      }
+      #grid > div:nth-child(1) {
+        grid-area: a;
+        background-color: #ed213b;
+      }
+      #grid > div:nth-child(2) {
+        grid-area: b;
+        background-color: #636940;
+      }
+      #grid > div:nth-child(3) {
+        grid-area: c;
+        background-color: #c1ff72;
+      }
+      #grid > div:nth-child(4) {
+        grid-area: d;
+        background-color: #ffffff;
+      }
+      #grid > div:nth-child(5) {
+        grid-area: e;
+        background-color: #ffbd59;
+      }
+      #grid > div:nth-child(6) {
+        grid-area: f;
+        background-color: #59a96a;
+      }
+      #grid > div:nth-child(7) {
+        grid-area: g;
+        background-color: #cb6ce6;
+      }
+      #grid > div:nth-child(8) {
+        grid-area: h;
+        background-color: #fff;
+      }
+      #grid > div:nth-child(9) {
+        grid-area: i;
+        background-color: #fff;
+      }
+      @media (min-width: 501px) and (max-width: 811px) {
+        #grid {
+          grid-template-areas:
+            "a c c f"
+            "a b d f"
+            "e b h g";
+          grid-template-columns: 1.1fr 1.1fr 0.8fr 0.8fr;
+        }
+      }
+      @media (min-width: 0px) and (max-width: 500px) {
+        #grid {
+          grid-template-areas:
+            "a i c f"
+            "a b d f"
+            "e b h g";
+          grid-template-columns: 1.1fr 1.1fr 0.8fr 0.8fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

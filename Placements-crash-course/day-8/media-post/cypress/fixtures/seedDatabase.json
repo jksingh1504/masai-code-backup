@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Full Stack Developement",
+    "author": "Masai",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUPQQL2RxlJlPLeIMtK80ttEj8YNhwohIYqM6NlKS6PUtyASHzc-f_e2tPs6t5cfjxJ3U&usqp=CAU",
+    "content": "Let's learn html!",
+    "category": "html",
+    "like": 5,
+    "dislike": 7,
+    "id": 1
+  },
+  {
+    "name": "Intro to Css",
+    "author": "Sourav",
+    "image": "https://camo.githubusercontent.com/edc736634dd35b0f4008e2f7db456136b9fc0e1e7a4078bb72c7352b1bdf8a7e/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667",
+    "content": "Let's learn Css!",
+    "category": "css",
+    "like": 6,
+    "dislike": 7,
+    "id": 2
+  },
+  {
+    "name": "Intro t0 React",
+    "author": "Albert",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUPQQL2RxlJlPLeIMtK80ttEj8YNhwohIYqM6NlKS6PUtyASHzc-f_e2tPs6t5cfjxJ3U&usqp=CAU",
+    "content": "Let's learn react",
+    "category": "react",
+    "like": 2,
+    "dislike": 1,
+    "id": 3
+  },
+  {
+    "name": "Intro to JS",
+    "author": "Aditya",
+    "image": "https://camo.githubusercontent.com/edc736634dd35b0f4008e2f7db456136b9fc0e1e7a4078bb72c7352b1bdf8a7e/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667",
+    "content": "Let's learn JS!",
+    "category": "js",
+    "like": 1,
+    "dislike": 1,
+    "id": 4
+  }
+]

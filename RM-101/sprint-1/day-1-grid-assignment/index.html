@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#container {
+				display: grid;
+				width: 70%;
+				margin: auto;
+                gap: 4px;
+				grid-template-areas: 
+                "a a b b"
+                "c c d e"
+                "f g h i"
+                "j j k k"
+                "l l m m"
+                "n n o p"
+                "q q q q";
+			}
+			.box-1 {
+                grid-area: a;
+                height: 350px;
+                background-color: #455179;
+			}
+			.box-2 {
+                grid-area: b;
+                height: 350px;
+                background-color: #faeada;
+			}
+			.box-3 {
+                grid-area: c;
+                height:170px;
+                background-color: burlywood;
+			}
+            .box-4 {
+                grid-area: d;
+                height: 170px;
+                background-color: #455179;
+			}
+            .box-5 {
+                grid-area: e;
+                background-color: #ebaf4f;
+                height: 170px;
+			}
+            .box-6 {
+                grid-area:f;
+                background-color: #ebaf4f;
+                height: 170px;
+			}
+            .box-7 {
+                grid-area: g;
+                background-color: rgb(252, 92, 34);
+                height: 170px;
+			}
+            .box-8 {
+                grid-area: h;
+                background-color: black;
+                height: 170px;
+			}
+            .box-9 {
+                grid-area: i;
+                background-color: rgb(209, 209, 209);
+                height: 170px;
+			}
+            .box-10 {
+                grid-area: j;
+                background-color: #ecc0a5;
+                height: 170px;
+			}
+            .box-11 {
+                grid-area: k;
+                background-color: rgb(248, 55, 55);
+                height: 170px;
+			}
+            .box-12 {
+                grid-area: l;
+                background-color: yellow;
+                height: 170px;
+			}
+            .box-13 {
+                grid-area: m;
+                background-color: grey;
+                height: 170px;
+			}
+            .box-14 {
+                grid-area: n;
+                height: 300px;
+                background-color: rgb(191, 190, 190);
+			}
+            .box-15 {
+                grid-area: o;
+                height: 300px;
+                background-color: burlywood;
+			}
+            .box-16 {
+                grid-area: p;
+                height: 300px;
+                background-color: rgb(249, 61, 61);
+			}
+            .box-17{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                grid-area: q;
+                height: 300px;
+                background-color: rgb(255, 135, 135);
+            }
+
+
+            @media all and (min-width:501px ) and (max-width:720px){
+                #container{
+                    gap: 4px;
+                    width: 80%;
+                    grid-template-areas: 
+                     "a a"
+                     "b b"
+                     "c c"
+                     "d e"
+                     "f g"
+                     "h i"
+                     "j j"
+                     "k k"
+                     "l l"
+                     "m m"
+                     "n n"
+                     "o p"
+                     "q q";
+                }
+            }
+
+            @media all and (min-width:0px ) and (max-width:500px){
+                #container{
+                    gap: 4px;
+                    width: 90%;
+                    grid-template-areas: 
+                     "a"
+                     "b"
+                     "c"
+                     "d"
+                     "e"
+                     "f"
+                     "g"
+                     "h"
+                     "i"
+                     "j"
+                     "k"
+                     "l"
+                     "m"
+                     "n"
+                     "o"
+                     "p"
+                     "q"
+                }
+                #container div:last-child{
+                    display: none;
+                }
+            }
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="box-1"></div>
+			<div class="box-2"></div>
+			<div class="box-3"></div>
+			<div class="box-4"></div>
+			<div class="box-5"></div>
+			<div class="box-6"></div>
+			<div class="box-7"></div>
+			<div class="box-8"></div>
+			<div class="box-9"></div>
+			<div class="box-10"></div>
+			<div class="box-11"></div>
+			<div class="box-12"></div>
+			<div class="box-13"></div>
+			<div class="box-14"></div>
+			<div class="box-15"></div>
+			<div class="box-16"></div>
+            <div class="box-17">
+                <img src="https://th.bing.com/th/id/OIP.v1QPPgTOfhTak46LaPwHowHaEJ?pid=ImgDet&rs=1" height="70%" alt="">
+            </div>
+		</div>
+	</body>
+</html>

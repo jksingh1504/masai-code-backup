@@ -1,0 +1,81 @@
+#ProductContainer {
+	display: grid;
+	width: 90%;
+	margin: auto;
+	grid-template-columns: 20% 80%;
+	gap: 20px;
+}
+
+#ProductContainer > div:first-child {
+	border: 2px solid black;
+	border-radius: 4px;
+	background-color: white;
+	padding: 10px 0px 26px;
+}
+
+#ProductContainer > div > p {
+	margin: 10px 0px 10px 10px;
+}
+
+#ProductContainer > div > select {
+	width: 160px;
+	margin-left: 10px;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 4px;
+	background-color: rgb(218, 231, 255);
+}
+
+#productList {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px 20px;
+}
+
+#productList img {
+	width: 100%;
+	border-radius: 8px 8px 0px 0px;
+}
+
+#productList > div {
+	border-radius: 8px;
+	padding: 10px;
+	box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+		rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	transition: box-shadow 1s, transform 1s;
+}
+
+#productList > div:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	transform: scale(1.02);
+}
+
+#productCard{
+	background-color: white;
+}
+
+@media all and (min-width: 600px) and (max-width: 1000px) {
+	#ProductContainer {
+		grid-template-columns: 35% 65%;
+        width: 95%;
+	}
+    #productList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media all and (min-width: 00px) and (max-width: 600px){
+    #ProductContainer {
+		grid-template-columns: 100%;   
+	}
+
+    #productList {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}

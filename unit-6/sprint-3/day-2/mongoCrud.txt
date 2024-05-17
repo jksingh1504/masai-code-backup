@@ -1,0 +1,28 @@
+
+// All users whose gender is male
+db.assignment.find({gender:"Male"},{_id:0})
+
+
+// all users whose ID is even
+db.assignment.find({id:{$mod:[2,0]}},{_id:0})
+
+// Users who currently live in Japan
+db.assignment.find({native:"Japan"},{_id:0})
+
+//Users who are female and live in India
+db.assignment.find({gender:"Female",native:"India"},{_id:0})
+
+//Users who are more than 25 years old
+db.assignment.find({age:{$gt:25}},{_id:0})
+
+//Users who are less than 50 years old and live in United State
+db.assignment.find({age:{$lt:50},native:"United States"},{_id:0})
+
+//Total number of users who want to relocate to France (count only)
+db.assignment.count({relocate_to:"France"})
+
+//Total number of users who are from USA and want to relocate to russia, sort them by age in ascending order
+db.assignment.find({native:"United States",relocate_to:"Russia"}).sort({age:1})
+
+//get all users, sort them by total number of family member ASC and age DESC order
+db.assignment.find({},{_id:0}).sort({family_members:1,age:-1})

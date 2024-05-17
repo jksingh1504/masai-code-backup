@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="./Styles/index.css" />
+    <link rel="stylesheet" href="./Styles/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <a href="index.html" id="home">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1454/5188/files/logo_602b86cb-64f1-48bb-91ff-10ea44c29c10.png?v=1679991855&width=500"
+          />
+        </a>
+      </div>
+      <div>
+        <a href="bodyCare.html" id="bodyCare"> Body Care </a>
+        <a href="faceCare.html" id="faceCare"> Face Care </a>
+        <a href="hairCare.html" id="hairCare"> Hair Care </a>
+      </div>
+
+      <div>
+        <a href="login.html" id="login"> login </a>
+        <a href="signUp.html" id="signUp"> signUp </a>
+        <a href="cart.html" id="cart" style="color: #0bad98">
+          <div>🛍️</div>
+          <div id="cartCount">0</div>
+        </a>
+      </div>
+    </nav>
+    <div id="discount">
+      <span class="marquee">
+        Use Masai15 code for 15% discount on Total Amount 🥳</span
+      >
+    </div>
+
+    <div id="billContainer">
+      <!-- add h2 tag for Total items in cart here-->
+      <!-- add h2 tag for Total Amount in cart here -->
+      <h2 id="totalItems"></h2>
+      <h2 id="totalAmount"></h2>
+      <!-- add input for coupon code here -->
+      <input id="coupon" type="text" placeholder="Enter coupon code">
+      <!-- add a button with text Apply Coupon here -->
+      <button id="apply-coupon" onclick="applyCoupon()">Apply Coupon</button>
+      <!-- add h1 tag for bill Amount here -->
+      <h1 id="billAmount"></h1>
+    </div>
+
+    <div id="cartContainer">
+      
+    </div>
+  </body>
+  <script src="./Scripts/cart.js"></script>
+</html>

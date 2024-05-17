@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "id": 37,
+      "brand": "blackberrys",
+      "title": "Handcrafted Leather crafted",
+      "image": "https://picsum.photos/200",
+      "price": 1950,
+      "category": "homedecor"
+    },
+    {
+      "id": 38,
+      "brand": "twills",
+      "title": "Handcrafted Leather crafted",
+      "image": "https://picsum.photos/200",
+      "price": 1850,
+      "category": "homedecor"
+    },
+    {
+      "id": 39,
+      "brand": "allen-solly",
+      "title": "Hour glass",
+      "image": "https://picsum.photos/200",
+      "price": 1750,
+      "category": "homedecor"
+    },
+    {
+      "id": 40,
+      "brand": "twills",
+      "title": "Set of 3 Owl",
+      "image": "https://picsum.photos/200",
+      "price": 3500,
+      "category": "homedecor"
+    }
+  ],
+  "totalPages": 7
+}

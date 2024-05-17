@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid black;
+}
+.quiz-form {
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.quiz-form * {
+  width: 100%;
+}
+.quiz-form input {
+  padding: 10px;
+}
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.post-list img {
+  width: 90%;
+  aspect-ratio: 1;
+}
+.post-card {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+.post-card > button {
+  cursor: pointer;
+  padding: 6px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.post-card > button + p {
+  display: inline-flex;
+  margin-right: 10px;
+}

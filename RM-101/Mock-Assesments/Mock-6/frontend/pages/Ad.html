@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../stylesheets/Ad.css" />
+		<link rel="stylesheet" href="../stylesheets/navbar.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Icons"
+		/>
+		<style>
+			body {
+				font-family: sans-serif;
+				position: relative;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="navbar">
+				<div>
+					<img
+						src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f697.svg"
+						alt=""
+					/>
+					<h3>Masai car</h3>
+				</div>
+
+				<div>
+					<div class="active"><a href="#">Create Ad.</a></div>
+					<div><a href="./cars.html">Cars</a></div>
+					<div>
+						<a href="./WishList.html">WishList</a
+						><span class="material-icons"> favorite </span>
+					</div>
+				</div>
+			</div>
+			<br /><br /><br /><br /><br />
+
+			<div id="userReg">
+				<h1>Register Your Add Here</h1>
+				<br /><br />
+				<div id="form">
+					<form onsubmit="handleSubmit()">
+						<h3 style="text-align: left">Select Brand</h3>
+						<select required name="brand">
+							<option value="">Please Select any Brand</option>
+							<option value="Tata">Tata</option>
+							<option value="Mahindra">Mahindra</option>
+							<option value="Maruti">Maruti</option>
+							<option value="Suzuki">Suzuki</option>
+							<option value="Hundai">Hundai</option>
+						</select>
+
+						<br />
+						<h3 style="text-align: left">Gear type (Automatic or Manual)</h3>
+						<select required name="type">
+							<option value="">Please select gear type</option>
+							<option value="Manual">Manual</option>
+							<option value="AMT">Automatic</option>
+						</select>
+
+						<br />
+						<h3 style="text-align: left">Year of Purchase</h3>
+						<select required name="year">
+							<option value="">Please select year of purchase</option>
+							<option value="2014">2014</option>
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+						</select>
+						<br />
+						<h3 style="text-align: left">KM driven</h3>
+						<input
+							name="kms"
+							required
+							type="number"
+							placeholder="Please enter KM driven"
+						/>
+
+						<br />
+						<h3 style="text-align: left">Description</h3>
+						<input
+							name="Description"
+							type="text"
+							placeholder="Please enter Description"
+						/>
+
+						<br />
+						<h3 style="text-align: left">Price</h3>
+						<input
+							name="Price"
+							type="number"
+							placeholder="Please enter expected price"
+							required
+						/>
+
+						<br /><br /><br />
+						<input type="submit" value="submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="../controls/Ad.js"></script>

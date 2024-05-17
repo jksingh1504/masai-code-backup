@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>JS-Recipes-Shop(InfiniteScrolling)</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="index.html" id="home"> Infinite Scrolling </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>Recipe Shop</h1>
+          <h2>Total Number Of Results: <span class="total-results">0</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="columns four sidebar-one" id="sidebar-one">
+          <button id="fetch-recipes" class="u-full-width button button-primary">
+            fetch recipes
+          </button>
+        </div>
+        <div class="columns eight main">
+          <div class="data-list-wrapper" id="data-list-wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>
